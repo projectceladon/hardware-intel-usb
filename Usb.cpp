@@ -67,6 +67,7 @@ static int32_t readFile(const std::string &filename, std::string *contents) {
   return -1;
 }
 
+#if 0
 static int32_t writeFile(const std::string &filename,
                          const std::string &contents) {
   FILE *fp;
@@ -87,6 +88,7 @@ static int32_t writeFile(const std::string &filename,
 
   return -1;
 }
+#endif
 
 std::string appendRoleNodeHelper(const std::string &portName,
                                  PortRoleType type) {
